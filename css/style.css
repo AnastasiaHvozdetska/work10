@@ -1,0 +1,324 @@
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-header {
+	position: relative;
+}
+.ba-header .bg {
+	background-color: rgba(60, 73, 85, 0.86);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.main-menu {
+	position: absolute;
+	top: 26px;
+	width: inherit;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.menu {
+	list-style: none;
+	display: inline-flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.menu-link {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.menu-link:hover{
+	color: #48bf72;
+}
+
+.menu li:not(:last-child):after{
+	content: "/";
+	color: #646c74;
+	margin-left: 45px;
+}
+
+.description {
+	width: inherit;
+	position: absolute;
+	z-index: 999;
+	bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	line-height: 15px;
+}
+h1 {
+	font-size: 35px;
+}
+.description p {
+	font-size: 24px;
+	font-weight: 300;
+}
+
+#button {
+	font-family: 'Lato', sans-serif;
+	background-color: transparent;
+	border: 2px solid #48bf72;
+	height: 40px;
+	width: 135px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	outline: none;
+}
+
+#button:hover{
+	background-color: #48bf72;
+	border: 2px solid #fff;
+}
+
+main {
+	width: 100%;
+}
+
+.content {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+#filtres {
+	width: 80%;
+	display: flex;
+	margin: 0 auto;
+}
+
+#filtres ul {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+#filtres li {
+	display: inline-flex;
+}
+.filtr-link {
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 0px 14px;
+	height: 32px;
+	font-weight: bold;
+	color: #3c4955;
+	font-size: 16px;
+	background-color: #eaeaea;
+	display: flex;
+	align-items: center;
+}
+
+.filtr-link:hover {
+	background-color: #48bf72;
+	color: white;
+}
+
+.portfolio {
+	display: flex;
+	width: 100%;
+}
+
+#first-column {
+	width: 40%;
+}
+#second-column {
+	width: 60%;
+}
+#first-column a {
+	display: flex;
+	margin: 40px 20px 20px 40px;
+}
+
+#item1 {
+	background: url(../images/Groupe-11.jpg) no-repeat;
+	background-size: cover;
+	height: 300px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+#item1:hover:after{
+	position: absolute;
+	content: url(../images/background.jpg) "Forest app";
+	color: white;
+	background-size: cover;
+	box-sizing: border-box;
+	background-color: #48bf72;
+	opacity: 0.7;
+}
+
+#item2 {
+	background: url(../images/filters2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 485px;
+}
+
+#second-column a {
+	display: flex;
+	margin: 40px 40px 20px 20px;
+}
+
+#item3 {
+	height: 435px;
+	background: url(../images/Groupe-1.jpg) no-repeat;
+	background-size: cover;
+}
+
+#item4 {
+	background: url(../images/5-px-depth.jpg) no-repeat;
+	background-size: cover;
+	height: 350px;
+}
+
+.about {
+	width: 100%;
+	height: 500px;
+	background: url(../images/men-computer.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	z-index: 900;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.bg-about {
+	position: absolute;
+	background-color: rgba(60, 73, 85, 0.73);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+#about-text {
+	width: 30%;
+	color: white;
+	z-index: 800;
+	position: absolute;
+	right: 250px;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+#about-text h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 0px;
+}
+#about-text h3 {
+	font-size: 1.5em;
+	font-weight: 400;
+}
+
+#contact {
+	width: 150px;
+	height: 40px;
+	border: 1px solid #3c4955;
+	border-radius: 5px;
+	color: #3c4955;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+
+#contact:hover{
+	color: #fff;
+	background: #48bf72;
+	border: 1px solid #fff;
+}
+.contact-form {
+	width: 100%;
+	border: 1px solid red;
+	height: 565px;
+	display: flex;
+	flex-direction: row;
+}
+#form-wrapper {
+	width: 695px;
+	margin: 0 auto;
+	border: 1px solid black;
+/*	display: flex;*/
+}
