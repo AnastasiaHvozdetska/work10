@@ -1,8 +1,10 @@
+* {
+	transition: 1s;
+}
+
 body{
 	font-family: 'Lato', sans-serif;
 }
-
-
 
 /* Layout */
 .ba-container{
@@ -195,16 +197,13 @@ main {
 .portfolio {
 	display: flex;
 	width: 100%;
-	border: 1px solid black;
 }
 
 #first-column {
 	width: 40%;
-	border: 1px solid red;
 }
 #second-column {
 	width: 60%;
-	border: 1px solid green;
 }
 #first-column a {
 	display: flex;
@@ -216,20 +215,25 @@ main {
 	background-size: cover;
 	height: 300px;
 	text-decoration: none;
+	transition: 1s;
 }
 .explanation {
 	color: white;
 	text-align: center;
 	width: 100%;
-	display: none ;
+	display: block;
+	opacity: 0;
 	flex-direction: column;
 	justify-content: center;
 	line-height: 5px;
 	background: rgba(72,191,114,0.9);
+/*	transition: 1s;*/
 }
 
 a:hover > .explanation {
 	display: flex;
+	opacity: 1;
+/*	transition: 1s;*/
 }
 
 #item2 {
