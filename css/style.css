@@ -212,19 +212,21 @@ main {
 	background: url(../images/Groupe-11.jpg) no-repeat;
 	background-size: cover;
 	height: 300px;
-	display: block;
-	position: relative;
-	overflow: hidden;
+	text-decoration: none;
+}
+.explanation {
+	color: white;
+	text-align: center;
+	width: 100%;
+	display: none ;
+	flex-direction: column;
+	justify-content: center;
+	line-height: 5px;
+	background: rgba(72,191,114,0.9);
 }
 
-#item1:hover:after{
-	position: absolute;
-	content: url(../images/background.jpg) "Forest app";
-	color: white;
-	background-size: cover;
-	box-sizing: border-box;
-	background-color: #48bf72;
-	opacity: 0.7;
+a:hover > .explanation {
+	display: flex;
 }
 
 #item2 {
@@ -232,6 +234,7 @@ main {
 	background-size: cover;
 	background-position: center center;
 	height: 485px;
+	text-decoration: none;
 }
 
 #second-column a {
@@ -243,12 +246,14 @@ main {
 	height: 435px;
 	background: url(../images/Groupe-1.jpg) no-repeat;
 	background-size: cover;
+	text-decoration: none;
 }
 
 #item4 {
 	background: url(../images/5-px-depth.jpg) no-repeat;
 	background-size: cover;
 	height: 350px;
+	text-decoration: none;
 }
 
 .about {
@@ -311,7 +316,6 @@ main {
 }
 .contact-form {
 	width: 100%;
-	border: 1px solid red;
 	height: 565px;
 	display: flex;
 	flex-direction: row;
@@ -319,6 +323,286 @@ main {
 #form-wrapper {
 	width: 695px;
 	margin: 0 auto;
-	border: 1px solid black;
-/*	display: flex;*/
+}
+
+#form-wrapper h2 {
+	text-transform: uppercase;
+	color: #48bf72;
+	text-align: center;
+	font-weight: 900;
+	font-size: 26px;
+	letter-spacing: 2px;
+}
+
+form {
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	color: #a6a5a5;
+}
+
+input::placeholder {
+	color: #a6a5a5;
+}
+
+#name {
+	width: 100%;
+	height: 55px;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	float: left;
+	outline: none;
+	background-color: #f1f1f1;
+	padding-left: 60px;
+}
+
+#input-name {
+	position: relative;
+	float: left;
+	width: 47%;
+}
+
+.fa-user {
+	position: absolute;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	height: 55px;
+	width: 50px;
+	background-color: #3c4955;
+	color: white;
+	border-radius: 3px;
+}
+
+.fa-user::after {
+	content: "";
+	position: absolute;
+	top: 43%;
+	left: 50px;
+	border-style: solid;
+	border-width: 4px 0 4px 6px;
+	border-color: transparent transparent transparent #3c4955;
+}
+
+#input-email {
+	position: relative;
+	float: right;
+	width: 47%;
+}
+
+#email {
+	width: 100%;
+	height: 55px;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	float: right;
+	outline: none;
+	line-height: 20px;
+	background-color: #f1f1f1;
+	padding-left: 60px;
+}
+
+.fa-envelope-o {
+	position: absolute;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	height: 55px;
+	width: 50px;
+	background-color: #3c4955;
+	color: white;
+	border-radius: 3px;
+}
+
+.fa-envelope-o::after {
+	content: "";
+	position: absolute;
+	top: 43%;
+	left: 50px;
+	border-style: solid;
+	border-width: 4px 0 4px 6px;
+	border-color: transparent transparent transparent #3c4955;
+}
+
+#messege {
+	position: relative;
+	clear: both;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+::-webkit-input-placeholder {color:#48bf72;}
+::-moz-placeholder          {color:#48bf72;}/* Firefox 19+ */
+:-moz-placeholder           {color:#48bf72;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#48bf72;}
+
+textarea {
+	width: 100%;
+	height: 225px;
+	border: 2px solid #3c4955;
+	border-radius: 3px;
+	resize: none;
+	outline: none;
+	background-color: #f1f1f1;
+	margin: 35px 0;
+	padding: 15px 0 0 60px;
+}
+textarea:placeholder {
+	color: #a6a5a5;
+}
+
+
+.fa-pencil {
+	position: absolute;
+	bottom: 38px;
+	text-align: center;
+	padding: 10px;
+	display: block;
+	height: 225px;
+	width: 50px;
+	background-color: #3c4955;
+	color: white;
+	border-radius: 3px;
+}
+
+.fa-pencil::after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	left: 50px;
+	border-style: solid;
+	border-width: 4px 0 4px 6px;
+	border-color: transparent transparent transparent #3c4955;
+}
+
+#envouer {
+	width: 100%;
+	height: 55px;
+	background-color: #48bf72;
+	color: white;
+	outline: none;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 14px;
+	font-weight: 900;
+	transition: 1s;
+}
+
+#envouer:hover {
+	background-color: white;
+	color: #48bf72;
+	border: 1px solid #48bf72;
+	border-radius: 3px;
+}
+
+.ba-footer {
+	width: 100%;
+	height: 200px;
+	background-color: #333333;
+	display: flex;
+}
+
+#copyright {
+	color: white;
+	display: block;
+	justify-content: center;
+	align-content: center;
+	width: 50%;
+	text-align: center;
+	font-size: 16px;
+	line-height: 10em;
+}
+#www {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.social-list {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+	list-style: none;
+}
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px;
+	background-color: black;
+	width: 50px; 
+  	height: 29px;
+	position: relative;
+}
+
+.social:after {
+	content: "";
+    position: absolute;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+	top: 100%;
+    border-top: 14.43px solid black;
+}
+
+.social:before {
+	content: "";
+    position: absolute;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    bottom: 100%;
+    border-bottom: 14.43px solid black;
+}
+
+.social-link {
+	display: inline-flex;
+	justify-content: space-around;
+	color: white;
+	text-decoration: none;
+}
+
+.social.twitter {
+	background: #55acee;
+}
+.social.twitter:before {
+	border-bottom: 14.43px solid #55acee;
+}
+.social.twitter:after {
+	border-top: 14.43px solid #55acee;
+}
+
+.social.linkedin {
+	background: #0976b4;
+}
+.social.linkedin:after {
+	border-top: 14.43px solid #0976b4;
+}
+.social.linkedin:before {
+	border-bottom: 14.43px solid #0976b4;
+}
+
+.social.globe {
+	background-color: #ea4c89;
+}
+
+.social.globe:before {
+	border-bottom: 14.43px solid #ea4c89;
+}
+.social.globe:after {
+	border-top: 14.43px solid #ea4c89;
+}
+
+
+.social.behance {
+	background: #1769ff;
+}
+.social.behance:after {
+	border-top: 14.43px solid #1769ff;
+}
+
+.social.behance:before {
+	border-bottom: 14.43px solid #1769ff;
 }

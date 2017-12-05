@@ -7,12 +7,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta name="description" content="" />
+	
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/02e8312cff.js"></script>
+	
 	<link rel="icon" href="./images/favicon.png"/>
 	<link rel="stylesheet" href="./css/normalize.css" />
 	<link rel="stylesheet" href="./css/layout.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -56,12 +60,32 @@
 			</div>
 			<div class="portfolio">
 				<div id="first-column">
-					<a href="" id="item1"></a>
-					<a href="" id="item2"></a>
+					<a href="" id="item1">
+						<div class="explanation">
+							<h2>Forest app</h2>
+							<p>application mobile</p>
+						</div>
+					</a>
+					<a href="" id="item2">
+						<div class="explanation">
+							<h2>Forest app</h2>
+							<p>application mobile</p>
+						</div>
+					</a>
 				</div>
 				<div id="second-column">
-					<a href="" id="item3"></a>
-					<a href="" id="item4"></a>
+					<a href="" id="item3">
+						<div class="explanation">
+							<h2>Forest app</h2>
+							<p>application mobile</p>
+						</div>
+					</a>
+					<a href="" id="item4">
+						<div class="explanation">
+							<h2>Forest app</h2>
+							<p>application mobile</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -78,16 +102,50 @@
 			<div id="form-wrapper">
 				<h2>Me contacter</h2>
 				<form action="" method="post">
-					<input type="text" placeholder="Votre nom">
-					<input type="email" placeholder="Votre email">
-					<input type="text" placeholder="Votre message">
-					<input type="button" value="Envouer">
+					<div id="input-name">
+						<input type="text" id="name" placeholder="Votre nom">
+						<i class="fa fa-user fa-2x" aria-hidden="true"></i>
+					</div>
+					<div id="input-email">
+						<input type="email" id="email" placeholder="Votre email">
+						<i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+					</div>
+					<div id="messege">
+						<textarea name="" cols="0" rows="0" placeholder="Votre message">
+						</textarea>
+						<i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+					</div>
+					<input type="button" id="envouer" value="Envouer">
 				</form>
 			</div>
 		</div>
 	</main>
 	<footer class="ba-footer">
-		
+		<p id="copyright">Copyright &#169 2015 by beneggen - <a href="" id="www">www.beneggen.fr</a></p>
+		<ul class="social-list">
+			<li class="social twitter">
+				<a href="#" class="social-link">
+					<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+				</a>
+			</li>
+			
+			<li class="social linkedin">
+				<a href="#" class="social-link">
+					<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+				</a>
+			</li>
+			
+			<li class="social globe">
+				<a href="#" class="social-link">
+					<i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li class="social behance">
+				<a href="#" class="social-link">
+					<i class="fa fa-behance fa-2x" aria-hidden="true"></i>
+				</a>
+			</li>
+		</ul>
 	</footer>
 </body>
 </html>
